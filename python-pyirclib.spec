@@ -4,7 +4,7 @@ Summary:	Python IRC library
 Summary(pl):	Modu³y Pythona do obs³ugi IRC
 Name:		python-%{module}
 Version:	0.4.0
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
