@@ -1,0 +1,66 @@
+%include	/usr/lib/rpm/macros.python
+%define		module	pyirclib
+Summary:	Python IRC library
+Summary(pl):	Modu³y Pythona do osb³ugi IRC
+Name:		python-%{module}
+Version:	0.4.0
+Release:	1
+License:	BSD
+Group:		Development/Languages/Python
+Group(cs):	Vývojové prostøedky/Programovací jazyky/Python
+Group(da):	Udvikling/Sprog/Python
+Group(de):	Entwicklung/Sprachen/Python
+Group(es):	Desarrollo/Lenguajes/Python
+Group(fr):	Development/Langues/Python
+Group(is):	Þróunartól/Forritunarmál/Python
+Group(it):	Sviluppo/Linguaggi/Python
+Group(ja):	³«È¯/¸À¸ì/Python
+Group(no):	Utvikling/Programmeringsspråk/Python
+Group(pl):	Programowanie/Jêzyki/Python
+Group(pt):	Desenvolvimento/Linguagens/Python
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Python
+Group(sl):	Razvoj/Jeziki/Python
+Group(sv):	Utveckling/Språk/Python
+Group(uk):	òÏÚÒÏÂËÁ/íÏ×É/Python
+Source0:	http://prdownloads.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
+URL:		http://pyirclib.sourceforge.net/
+BuildRequires:	python-modules >= 2.2
+BuildRequires:	rpm-pythonprov
+%requires_eq	python
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	%{module}
+
+%description
+pyirclib is a simple yet powerful IRC library written in Python. It's
+intended audience are Python developers wanting to write their own IRC
+programs.
+
+%description -l pl
+pyirclib jest prost± ale potê¿n± bibliotek± do obs³ugi IRC napisan± w
+Pythonie.
+
+%prep
+%setup -q -n %{module}-%{version}
+
+%build
+python setup.py build
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+python setup.py install \
+        --root=$RPM_BUILD_ROOT
+
+%py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
+%py_comp $RPM_BUILD_ROOT%{py_sitedir}
+
+gzip -9nf Changelog README TODO example*
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc *.gz *.html
+%{py_sitedir}/*.py[co]
