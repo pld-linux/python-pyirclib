@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.python
 %define		module	pyirclib
 Summary:	Python IRC library
-Summary(pl):	Modu³y Pythona do osb³ugi IRC
+Summary(pl):	Modu³y Pythona do obs³ugi IRC
 Name:		python-%{module}
 Version:	0.4.0
 Release:	1
