@@ -49,11 +49,8 @@ python setup.py build
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+python setup.py install --optimize=2 \
         --root=$RPM_BUILD_ROOT
-
-%py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
-%py_comp $RPM_BUILD_ROOT%{py_sitedir}
 
 gzip -9nf Changelog README TODO example*
 
