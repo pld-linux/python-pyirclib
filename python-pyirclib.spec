@@ -24,8 +24,7 @@ Group(sv):	Utveckling/Språk/Python
 Group(uk):	òÏÚÒÏÂËÁ/íÏ×É/Python
 Source0:	http://prdownloads.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
 URL:		http://pyirclib.sourceforge.net/
-BuildRequires:	python-modules >= 2.2
-BuildRequires:	rpm-pythonprov
+BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %requires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
