@@ -10,7 +10,7 @@ Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
 URL:		http://pyirclib.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
-%requires_eq	python
+%pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	%{module}
