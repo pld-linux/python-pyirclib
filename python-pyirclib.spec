@@ -1,5 +1,7 @@
 %include	/usr/lib/rpm/macros.python
+
 %define		module	pyirclib
+
 Summary:	Python IRC library
 Summary(pl):	Modu³y Pythona do obs³ugi IRC
 Name:		python-%{module}
@@ -10,6 +12,7 @@ Group:		Libraries/Python
 Source0:	http://prdownloads.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
 URL:		http://pyirclib.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
+BuildRequires:	python >= 2.2.1
 %pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
