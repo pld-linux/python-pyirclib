@@ -6,7 +6,7 @@ Summary:	Python IRC library
 Summary(pl):	Modu³y Pythona do obs³ugi IRC
 Name:		python-%{module}
 Version:	0.4.3
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
@@ -40,10 +40,12 @@ rm -rf $RPM_BUILD_ROOT
 python setup.py install --optimize=2 \
         --root=$RPM_BUILD_ROOT
 
+find $RPM_BUILD_ROOT%{py_sitescriptdir} -type f -name "*.py" | xargs rm
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc Changelog README TODO example* *.html
-%{py_sitedir}/*.py[co]
+%{py_sitescriptdir}/*.py[co]
