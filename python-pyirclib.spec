@@ -9,7 +9,7 @@ Version:	0.4.3
 Release:	1
 License:	BSD
 Group:		Libraries/Python
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/pyirclib/pyirclib-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
 URL:		http://pyirclib.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 BuildRequires:	python >= 2.2.1
