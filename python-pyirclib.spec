@@ -7,21 +7,6 @@ Version:	0.4.0
 Release:	1
 License:	BSD
 Group:		Development/Languages/Python
-Group(cs):	Vývojové prostøedky/Programovací jazyky/Python
-Group(da):	Udvikling/Sprog/Python
-Group(de):	Entwicklung/Sprachen/Python
-Group(es):	Desarrollo/Lenguajes/Python
-Group(fr):	Development/Langues/Python
-Group(is):	Þróunartól/Forritunarmál/Python
-Group(it):	Sviluppo/Linguaggi/Python
-Group(ja):	³«È¯/¸À¸ì/Python
-Group(no):	Utvikling/Programmeringsspråk/Python
-Group(pl):	Programowanie/Jêzyki/Python
-Group(pt):	Desenvolvimento/Linguagens/Python
-Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Python
-Group(sl):	Razvoj/Jeziki/Python
-Group(sv):	Utveckling/Språk/Python
-Group(uk):	òÏÚÒÏÂËÁ/íÏ×É/Python
 Source0:	http://prdownloads.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
 URL:		http://pyirclib.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
