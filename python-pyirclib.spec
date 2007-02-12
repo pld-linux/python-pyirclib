@@ -2,7 +2,7 @@
 %define		module	pyirclib
 
 Summary:	Python IRC library
-Summary(pl):	Modu³y Pythona do obs³ugi IRC
+Summary(pl.UTF-8):   ModuÅ‚y Pythona do obsÅ‚ugi IRC
 Name:		python-%{module}
 Version:	0.4.3
 Release:	4
@@ -22,8 +22,8 @@ pyirclib is a simple yet powerful IRC library written in Python. It's
 intended audience are Python developers wanting to write their own IRC
 programs.
 
-%description -l pl
-pyirclib jest prost± ale potê¿n± bibliotek± do obs³ugi IRC napisan± w
+%description -l pl.UTF-8
+pyirclib jest prostÄ… ale potÄ™Å¼nÄ… bibliotekÄ… do obsÅ‚ugi IRC napisanÄ… w
 Pythonie.
 
 %prep
