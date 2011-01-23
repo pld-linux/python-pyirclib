@@ -12,6 +12,8 @@ Source0:	http://dl.sourceforge.net/pyirclib/pyirclib-%{version}.tar.gz
 # Source0-md5:	b9d60e69314a548dfd7d48da3d540d62
 URL:		http://pyirclib.sourceforge.net/
 BuildRequires:	python >= 2.2.1
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
